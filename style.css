@@ -1,0 +1,323 @@
+/*-------------------------------------------HELA SIDANS REGLER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ul li {
+        line-height: 1.8;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Faculty Glyphic', cursive;
+    background-color: #ffdcf8;
+    color: #043f2c;
+    overflow-x: hidden;
+}
+
+
+/*---------------------------------------------HEADER*/
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #043f2c;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #529e5a;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background-color: #46ac66;
+    color: #fff;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #ffdcf8;
+}
+
+.home-img {
+    flex: 1;
+    max-width: 50%;
+}
+
+.home-content {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+}
+
+.home-content h3 {
+    font-size: 2rem;
+}
+
+.home-content p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: #007600;
+    font-size: 2em;
+    margin-right: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #043f2c;
+    transform: scale(1.2);
+}
+
+.btn {
+    padding: 12px 24px;
+    background-color: #529e5a;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #007600;
+    transform: scale(1.05);
+}
+
+/*---------------------------------------------------BOXAR*/
+
+.profile-competence-section {
+    padding: 100px;
+    text-align: center;
+    margin: 20;
+}
+
+.profile-competence-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills, .education, .experiences {
+    flex: 1;
+    padding: 70px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+
+/*-----------------------------------------------------PROJEKT*/
+
+
+.projects-section {
+    padding: 100px;
+    text-align: center;
+ 
+
+}
+
+.project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    text-align: center;
+    margin: 10px;
+    flex-basis: calc(30% - 20px);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #043f2c;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    width: 100%; 
+    object-fit: scale-down; 
+}
+
+/* --------------------------------------KONTAKT FORMULÄR */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-heading i {
+    margin-left: 10px; 
+    font-size: 1.2em; 
+    color: #529e5a; 
+}
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    font-family: 'Faculty Glyphic', cursive;
+    padding: 10px 15px;
+    background-color: #529e5a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.contact-form button:hover {
+   
+    color: #ffffff;
+    background-color: #043f2c;
+    font-weight: 600;
+}
+
+.padding {
+    margin-bottom: 100px;
+}
+
+
+/*-----------------------------------------------FOOTER*/
+
+.site-footer {
+    text-align: center;
+    padding: 20px 5%;
+    background-color: #043f2c;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+
+
+
+
+/*--------------------------------------------RESPONSIVITET*/
+/* Responsive styles */
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home-img img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* /--------------------------------------------------------SCROLL BAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #529e5a;
+}
+::-webkit-scrollbar-thumb {
+  background: #043f2c;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #043f2c;
+}
+
+
+/* --------------------------------------------------------------PROJEKTSIDOR */
+
+
+.project-details-section {
+    padding: 100px;
+    text-align: center;
+}
+
+.project-details-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-main-image {
+    width: 35%;
+    height: auto;
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    margin-inline-start: 20px;
+}
+
+.project-description {
+    margin: 20px auto;
+    max-width: 800px; 
+    text-align: left;
+}
+
+.project-description h2, .project-description h3 {
+    margin: 15px 0;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    margin-left: 20px;
+
+}
+
+
+
+
